@@ -1,0 +1,54 @@
+/* Global styles
+--------------------*/
+@media only screen and (max-width: 600px){
+    .container, .form1, #scoop_form{
+        flex-direction: column;
+    }
+}
+
+
+/* Fonts
+--------------------*/
+body {
+    font-family: ministry, sans-serif;
+    font-weight: 300;
+    color: #0D1A29;
+}
+
+h1 {
+    font-family: condor, sans-serif;
+    color: #00A6B7;
+}
+
+h2, nav {
+    font-family: "bernina sans" sans-serif;
+    color: #F49809;
+}
+
+h3 {
+    color: #74B72B;
+}
+
+
+/* Header/ Menu
+--------------------*/
+
+header {
+    background: white;
+}
+
+nav a {
+    color: #00A6B7;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+    background: #F49809;
+}
+
+nav a:active {
+    color: white;
+    background: #74B72B;
+}
