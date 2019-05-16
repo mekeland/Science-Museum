@@ -1,14 +1,18 @@
 /* Global styles
 --------------------*/
-@media only screen and (max-width: 600px){
-    .container, .form1, #scoop_form{
-        flex-direction: column;
-    }
+
+body {
+    max-width: 900px;
+    margin: auto;
+    padding: 10px;
+    min-width: 320px;
+    overflow: hidden;
 }
 
 
 /* Fonts
 --------------------*/
+
 body {
     font-family: ministry, sans-serif;
     font-weight: 300;
@@ -18,6 +22,7 @@ body {
 h1 {
     font-family: condor, sans-serif;
     color: #00A6B7;
+    text-align: center;
 }
 
 h2, nav {
@@ -33,14 +38,33 @@ h3 {
 /* Header/ Menu
 --------------------*/
 
-header {
-    background: white;
+header{
+    background: #00A6B7;
+    text-align: center;
+}
+/* Header/ Menu
+#header_img {
+    background: url(graphics/logo_white.png) no-repeat center 25px;
+    height: 170px;
+    width: 100%;  
+}
+--------------------*/
+
+#logo {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+
+nav {
+    text-align: center;
 }
 
 nav a {
-    color: #00A6B7;
+    color: white;
     font-size: 20px;
     text-decoration: none;
+    padding: 0 3%;
 }
 
 nav a:hover {
@@ -51,4 +75,271 @@ nav a:hover {
 nav a:active {
     color: white;
     background: #74B72B;
+}
+
+#home_icon {
+    padding-top: 7px;
+}
+
+/* HOME - Informaton bow
+--------------------*/
+
+#top_img {
+    width: 100%;
+}
+
+#info_container {
+    margin: 10px auto;
+    padding: 1%;
+    display: flex;
+    background: rgba(0,0,0,0.2);
+}
+
+.info_col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.icon {
+    padding-top: 18px;
+    padding-left: 3%;
+    flex: 0.1;
+}
+    
+
+/* HOME - News
+--------------------*/
+
+.col_container {
+    display: flex;
+    padding: 5px 0;
+    border-top: 1px dotted #0D1A29;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+}
+
+.col_img {
+    flex: 1;
+}
+
+
+/* PROGRAM
+--------------------*/
+#program_container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.program_col {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px;
+    border-top: 1px dotted #0D1A29;
+}
+
+.program_txt {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.program_img {
+    flex: 1;
+}
+
+
+
+/* EXIBITION
+--------------------*/
+
+#explore_top {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.exhibition_container {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.block {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;1
+}
+
+
+/* TICKETS
+--------------------*/
+
+#ticket_prices {
+    
+}
+
+#ticket_prices tr {
+    
+}
+
+#order_ticket {
+    background: 
+}
+
+
+
+/* CONTACT
+--------------------*/
+
+#message_container {
+    padding: 10px;
+}
+
+#message_container h2{
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+form{
+    max-width: 200px;
+    width: 100%;
+}
+
+#message {
+    max-width: 500px;
+}
+
+input[type=text]{
+    width: 100%;
+    overflow: hidden;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+textarea {
+    display: block;
+    height: 200px;
+    padding: 5px;
+    margin-top: 6px;
+}
+
+input[type=submit] {
+    background: gray;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    float: left;
+    margin: 15px 0px;
+}
+
+
+#map{
+    padding-top: 15%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* ABOUT
+--------------------*/
+
+#about_container {
+    display: flex;
+    margin-top: 60px;
+}
+
+#about_img {
+    flex: 1;
+    margin: auto;
+}
+
+#about_txt {
+    flex: 1;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+
+
+
+/* Back to top
+--------------------*/
+
+#backtop {
+    margin-top: 50px;
+    text-decoration: none;
+    color: #00A6B7;
+    font-weight: 600;
+    display: block;
+}
+
+
+/* Footer
+--------------------*/
+
+footer {
+    display: flex;
+    list-style: none;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.footer_col{
+    flex: 1;
+}
+
+footer a {
+    color: #0D1A29;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+/* Media
+--------------------*/
+
+@media only screen and (max-width: 700px) {
+    
+    #logo img{
+        width: 300px;
+    }
+    nav {
+        overflow: hidden;
+    }
+    nav a {
+        font-size: 16px;
+        text-align: center;
+        color: white;
+        padding: 5px 10px;
+    }
+    .col_container, .program_col, #about_container {
+        flex-direction: column;
+    }
+    .col_container {
+        margin: auto;
+    }    
+    .icon {
+        padding-left: 1px;
+    }
+    
+
+}
+
+
+@media only screen and (max-width: 500px) {
+    nav a {
+        padding: 5px 5px;
+    }
+
 }
